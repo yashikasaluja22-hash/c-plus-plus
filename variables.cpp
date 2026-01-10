@@ -29,8 +29,10 @@ std::cout << student << '\n';
 std::string name = "Brocode";
 std::string day = "Friday";
 std::string address = "123 fake st.";
-std::cout << "Hello" << name << '\n';
-std::cout << "You live at" << address << '\n'; 
+std::string item = "popcorn";
+std::cout << item << '\n';
+std::cout << "Hello " << name << '\n';
+std::cout << "You live at " << address << '\n'; 
 
 
 
