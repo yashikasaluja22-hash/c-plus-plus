@@ -9,3 +9,4 @@ do{
 }while(number < 0);
 return 0;
 }
+//intialize variables for do-while loop, same for "while" loop
