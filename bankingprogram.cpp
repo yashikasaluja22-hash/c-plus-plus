@@ -18,7 +18,7 @@ cout << "2.Deposit Money\n";
 cout << "3.Withdraw Money\n";
 cout << "4.Exit\n";
 cin >> choice;
-
+//
 //agar user input galat deta hia eg: abc, 1234, etc then cin hamara fail ho jayega means true ho jayega
 //then cin clear taki invalid user input clear ho sake
 // cin ignore taki code tab tak ignore jab tak newline nhi dikh jati, warna woh new code mein bhi aaygea
