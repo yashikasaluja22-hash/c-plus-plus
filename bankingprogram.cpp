@@ -1,5 +1,6 @@
-#include<iostream>
-#include <iomanip>
+#include<iostream> // for input & ouput commands
+#include <iomanip> // for setprecision and fixed
+#include <limits> // for numeric_limits, cin.ignore wale mein 
 using namespace std;
 void showBalance(double balance);
 double deposit();
@@ -18,13 +19,26 @@ cout << "3.Withdraw Money\n";
 cout << "4.Exit\n";
 cin >> choice;
 
+//agar user input galat deta hia eg: abc, 1234, etc then cin hamara fail ho jayega means true ho jayega
+//then cin clear taki invalid user input clear ho sake
+// cin ignore taki code tab tak ignore jab tak newline nhi dikh jati, warna woh new code mein bhi aaygea
+//and as input hi galat hai toh baad wala code run karne ka no use so we have used continue here, skip ho jaye
+//fir ekdum fresh start hogi
+// agar hum yeh nhi karenge ho cin hang ho skata hai
+if(cin.fail()){
+     cin.clear();
+     cin.ignore(numeric_limits<streamsize>::max(), '\n');
+     cout << "Invalid input\n";
+     continue;
+}
+
 switch(choice){
     case 1: showBalance(balance);
            break;
-    case 2: balance =+ deposit()
+    case 2: balance += deposit();
          showBalance(balance);
          break;
-    case 3: balance =- withdraw(balance);
+    case 3: balance -= withdraw(balance);
          showBalance(balance);
          break;
     case 4: cout << "Thanks for visiting!!\n";
@@ -42,7 +56,7 @@ void showBalance(double balance){
  cout << "Your balance is: $" << setprecision(3) << fixed << balance << '\n';
 }
 // agar tum function ke andar variable ko intialise kar rhe ho then no need ki uske parementer ke andar(brackets)  mein uska variable ka naam likho
-void deposit() {
+double deposit() {
      double amount = 0;
      cout << "How much money u wish to deposit: ";
      cin >> amount;
@@ -55,7 +69,7 @@ void deposit() {
           return 0;
      }
 }
-void withdraw(double balance){
+double withdraw(double balance){
      double amount = 0;
      cout << "How much money u wish to withdraw: ";
      cin >> amount;
