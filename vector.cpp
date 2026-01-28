@@ -28,7 +28,7 @@ cout << v[1] << '\n';
 //syntax --> v.insert(v.begin() + index, value);
 vector<int>v3 = {10, 50, 60, 90};
 v3.insert(v3.begin() + 2, 35); //index 2 par 30 insert karna and isse size increse hota hai cuz value add hui replace nhi
-//to replace type --> v3[2] = 35;
+//to replace type --> v3[2] = 35; ****************
 cout << v3[2] << '\n';
 cout << v3[4] << '\n';
 //insert use karne se desired index par ni. add hua magar uske baad har elemnt ka index shift hua as size increase hua 
