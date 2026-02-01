@@ -7,9 +7,9 @@ int main() {
 // & address of operator
 // * dereference operator
 string name = "Bro";
-string *pName = &name;
-cout << pName << '\n';// it will show stored address of name
-cout << *pName << '\n';//here it will access the value stored in the memory address which this variable holds
+string *hey = &name;
+cout << hey << '\n';// it will show stored address of name
+cout << *hey << '\n';//here it will access the value stored in the memory address which this variable holds
 
 vector<string>v = {"pizza1", "pizza2", "pizza3", "pizza4"};
 //vector is itself an address so no need to use & to store its address
