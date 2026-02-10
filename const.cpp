@@ -11,7 +11,5 @@ double radius = 10;
 double circumference = 2 * PI * radius;
 std::cout << circumference << "cm" << '\n';
 
-
-
 return 0;
 }
