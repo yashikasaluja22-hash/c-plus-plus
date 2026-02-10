@@ -31,6 +31,6 @@ double square(double a){
     return area;
 }
 double circle(double r){
-    double area =  3.14 * r * r;
+    double area =  PI * r * r;
  return area;
 }
