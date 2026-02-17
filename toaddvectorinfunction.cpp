@@ -3,7 +3,7 @@
 using namespace std;
 void printvector(vector<int>& v);
 
-vector<int> createvector(){
+vector<int> createvector(){// we use these kind of vector functions of this format to return more than 1 value
     vector<int>v2 = {5, 4, 3, 6};
     return v2;
 }
