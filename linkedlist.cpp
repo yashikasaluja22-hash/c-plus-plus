@@ -49,3 +49,11 @@ cout << first->next->next->data << endl;
 
 return 0;
 }
+//in leetcode iss node ka naam "Listnode" like below
+/*struct ListNode {
+    int val;
+    ListNode *next;
+};Yaha:
+val = data
+next = agla node ka address
+Same concept.*/
