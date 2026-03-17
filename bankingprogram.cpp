@@ -27,7 +27,7 @@ cin >> choice;
 // agar hum yeh nhi karenge ho cin hang ho skata hai
 if(cin.fail()){
      cin.clear();
-     cin.ignore(numeric_limits<streamsize>::max(), '\n');
+     cin.ignore(numeric_limits<streamsize>::max(), '\n');// to ignore  
      cout << "Invalid input\n";
      continue;
 }
@@ -87,3 +87,31 @@ double withdraw(double balance){
           return 0;
      }
 }
+/*cin.clear();
+     cin.ignore(numeric_limits<streamsize>::max(), '\n');// to ignore  
+     cout << "Invalid input\n";
+     continue;
+     
+      Agar user galat input de deta hai (jaise int ki jagah "abc"), toh cin fail state me chala jata hai.
+
+Ab kya hoga?
+cin kaam karna band kar deta hai
+next inputs bhi nahi lega
+👉 cin.clear() kya karta hai?
+✔ cin ka error state reset kar deta hai
+✔ matlab: “ab dobara input le sakte ho”
+
+2. cin.ignore(...) — garbage input hatane ke liye
+👉 Problem: "abc" abhi bhi input buffer me pada hai
+
+Agar ignore nahi karoge:
+next cin >> fir se wahi "abc" read karega ❌
+program loop me fas jayega
+👉 cin.ignore(...) kya karta hai?
+✔ buffer me pada poora galat input hata deta hai
+✔ newline (Enter) tak sab clear
+
+Simple analogy
+Socho:
+cin.clear() = "system reset"
+cin.ignore() = "dust clean"*/
