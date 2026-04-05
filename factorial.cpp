@@ -12,14 +12,16 @@ return 0;
     }
     return result;
 } this is again iterative approach*/
- int factorial(int num){
-    if(num > 1){
-        return num * factorial(num - 1);
+int factorial(int num){
+    if(num < 0){
+        cout << "Invalid input";
+        return -1;
     }
-    else{
+    if(num == 0 || num == 1){
         return 1;
     }
- }
+    return num * factorial(num - 1);
+}
  /*num = 5 → condition true
 
 So computer bolta hai:

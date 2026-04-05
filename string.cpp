@@ -34,6 +34,10 @@ std::cout << name1.find('a') << '\n'; // to find a character in a string variabl
 //to erase in string variable use below
 
 name1.erase(0, 3); // here first no. is the beginning and next no. is end of erase but the last no.(index no.) is exclusive
+//string.erase(start_index, length);
+//means:
+//Start deleting from index 4
+//Delete 6 characters
 std::cout << name1 << '\n';
 
 return 0;

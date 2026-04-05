@@ -6,6 +6,7 @@ int main() {
 // Vector is a dynamic smart array
 // int arr[5]
 //Size fix
+
 //Baad mein bada ya chhota ❌
 
 //vector<int>v;
