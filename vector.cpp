@@ -49,5 +49,7 @@ cout << '\n';
 v3.erase(v3.begin() + 2);
 cout << v3.size();// size will also be changed
 
+//v.pop_back(); is used to remove last element in a vector which also decrease its size
+v3.pop_back();
 return 0;
 }
